@@ -1,3 +1,16 @@
+<?php
+    $connect=mysqli_connect("localhost","root", "","dashboard");
+    $query="SELECT * FROM `dashboard`";
+    $execute_query=mysqli_query($connect,$query);
+
+    for($i=1;$i<3;$i++)
+    {
+        $fetch_my_data=mysqli_fetch_row($execute_query);
+
+    ?>
+	    
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
